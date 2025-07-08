@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phonequilla</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login_regs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <div class="container top-nav">
+    <a href="index.html" class="logo"><img src="img/logo-black.png" alt="Logo Phonequilla"></a>
+    <form action="#" class="search">
+      <input type="search" placeholder="Buscar productos..." />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="cart_header">
+      <div onclick="open_cart()" class="icon_cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="count_item">0</span>
+      </div>
+      <div class="tottal_price">
+        <p>Mis compras</p>
+        <p class="price_cart_Head">$0</p>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="links container">
+      <ul id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="all_products.html">Todos los productos</a></li>
+        <li><a href="item.html">Producto destacado</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+      <div class="loging_signup">
+        <a href="login.html">Iniciar sesión <i class="fa-solid fa-right-to-bracket"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="signin sec_form">
+  <div class="form_container">
+    <p class="title">¡Bienvenido de nuevo!</p>
+
+    <form action="" class="form">
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="password" placeholder="Contraseña" required />
+      <button class="form-btn">Iniciar sesión</button>
+    </form>
+
+    <p class="sign-up-label">
+      ¿No tienes cuenta? <a href="signup_page.html" class="sign-up-link">Regístrate aquí</a>
+    </p>
+
+    <div class="buttons-container">
+      <div class="apple-login-buuton">
+        <i class="fa-brands fa-apple"></i>
+        <span>Iniciar sesión con Apple</span>
+      </div>
+
+      <div class="google-login-button">
+        <i class="fa-brands fa-google"></i>
+        <span>Iniciar sesión con Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Línea directa gratuita 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit consectetur.</p>
+            </div>
+
+            <div class="row">
+                <h4>Soporte al cliente</h4>
+
+                <div class="links">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Seguimiento de pedidos</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Centro de ayuda</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Envíos y entregas</h4>
+
+                <div class="links">
+                    <a href="#">Información de envío</a>
+                    <a href="#">Descuentos</a>
+                    <a href="#">Pago y envío</a>
+                    <a href="#">Tiempo estimado de entrega</a>
+                    <a href="#">Guía de envío</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Información</h4>
+
+                <div class="links">
+                    <a href="#">Populares</a>
+                    <a href="#">Nuestros servicios</a>
+                    <a href="#">Tu cuenta</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Phonequilla.</span> all rights reserved</p>
+
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

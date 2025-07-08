@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonequilla</title>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Buscar productos...">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+                    <p>Mi carrito: </p>
+                    <p class="price_cart_Head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+ 
+                <ul id="menu">
+                    <span onclick="close_menu()" class="bg-overlay"></span>
+
+                    
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="all_products.html">Todos los productos</a></li>
+                    <li><a href="item.html">Producto destacado</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+
+                <div class="loging_signup">
+                    <a href="login.html"> Iniciar sesion <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup_page.html"> Registrarse <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+ <div class="cart">
+    <div class="top_cart">
+        <h3>Mi carrito <span class="count_item_cart">(0 artículos en el carrito)</span></h3>
+        <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+
+
+    <div class="items_in_cart">
+        
+
+    </div>
+
+   <div class="bottom_Cart">
+    <div class="total">
+        <p>Subtotal del carrito</p>
+        <p class="price_cart_total">$0</p>
+    </div>
+
+    <div class="button_Cart">
+               <a href="checkout.html" class="btn_cart">Finalizar compra</a>
+                <button onclick="close_cart()" class="btn_cart trans_bg">Comprar más</button>
+    </div>
+</div>
+</div>
+
+
+    <div class="top_page">
+    <div class="container">
+        <h1>Experimenta el futuro de la tecnología con Phonequilla</h1>
+        <p>Encuentra todo lo que necesitas para transformar tu hogar en un espacio inteligente y conectado. 
+            Nuestra tienda Topico ofrece una amplia gama de dispositivos que se adaptan a tus necesidades.</p>
+    </div>
+</div>
+
+
+    <section class="all_products">
+        <div class="container">
+
+            <span class="btn_filter" onclick="open_close_filter()">
+                filter <i class="fa-solid fa-filter"></i>
+            </span>
+
+            <div class="filter">
+                <h2>filter</h2>
+
+                <div class="filter_item">
+                    <h4>categorie</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span>Phones</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Tablets</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Electronics</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>TV</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Fashion</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Watches</span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="filter_item">
+                    <h4>Brand</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span>Apple</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>samsung</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>intel</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>oppo</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>xiaomi</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>huawei</span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="filter_item">
+                    <h4>color</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span class="color" style="background: red;"></span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        
+                        <div class="item">
+                            <span class="color" style="background: blue;"></span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        
+                        <div class="item">
+                            <span class="color" style="background: black;"></span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span class="color" style="background: orangered;"></span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background: green;"></span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span class="color" style="background: yellow;"></span>
+                            <input type="checkbox">
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="products_dev" class="products_dev">
+
+            </div>
+        </div>
+
+
+
+        <div class="pagination">
+            <span class="btn_page prev"><i class="fa-solid fa-backward-step"></i></span>
+           <a href="#"> <span class="num_page active">1</span></a>
+          <a href="#">  <span class="num_page">2</span></a>
+          <a href="#">  <span class="num_page">3</span></a>
+            <span class="btn_page next"><i class="fa-solid fa-forward-step"></i></span>
+        </div>
+    </section>
+
+
+<section>  
+    <div class="back_to_top">
+    <p>Volver arriba</p>
+  </div>
+</section>
+   
+
+
+   
+        
+ 
+
+  <footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>Línea directa gratuita 24/24:</h5>
+                    <h6>(+100) 123 456 7890</h6>
+                </div>
+            </div>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit consectetur</p>
+        </div>
+
+        <div class="row">
+            <h4>Soporte al cliente</h4>
+
+            <div class="links">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Seguimiento de pedidos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Eventos</a>
+                <a href="#">Centro de ayuda</a>
+            </div>
+        </div>
+
+     
+        <div class="row">
+            <h4>Envíos y entregas</h4>
+
+            <div class="links">
+                <a href="#">Información de envío</a>
+                <a href="#">Descuentos</a>
+                <a href="#">Pago y envío</a>
+                <a href="#">Tiempo estimado de entrega</a>
+                <a href="#">Guía de envío</a>
+            </div>
+        </div>
+      
+
+
+
+        <div class="row">
+            <h4>Información</h4>
+
+            <div class="links">
+                <a href="#">Populares</a>
+                <a href="#">Nuestros servicios</a>
+                <a href="#">Tu cuenta</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos y condiciones</a>
+            </div>
+        </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="bottom_footer">
+        <div class="container">
+            <p>Copyright &copy;<span>Phonequilla.</span> all rights reserved</p>
+
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+    </footer>
+    
+
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/all_products.js"></script>
+</body>
+</html>
